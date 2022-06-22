@@ -1,0 +1,54 @@
+swagger: '2.0'
+info:
+  title: poe-api
+  description: API Gateway for POE
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /api/user-service:
+    get:
+      summary: user-service
+      operationId: user-service
+      x-google-backend:
+        address: ${user_service_url}
+      responses:
+        200:
+          description: Successful response
+          schema:
+              type: string
+  /api/post-service:
+    get:
+      summary: post-service
+      operationId: post-service
+      x-google-backend:
+        address: ${post_service_url}
+      responses:
+        200:
+          description: Successful response
+          schema:
+              type: string
+  /api/ama-service:
+    get:
+      summary: ama-service
+      operationId: ama-service
+      x-google-backend:
+        address: ${ama_service_url}
+      responses:
+        200:
+          description: Successful response
+          schema:
+              type: string
+  /api/feed-service:
+    get:
+      summary: feed-service
+      operationId: feed-service
+      x-google-backend:
+        address: ${feed_service_url}
+      responses:
+        200:
+          description: Successful response
+          schema:
+              type: string

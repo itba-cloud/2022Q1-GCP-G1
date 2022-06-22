@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>ITBA - Cloud</title>
+        <div align="center">
+            <!-- Esta es mi función -->
+            <script>
+                const title = ["Bienvenidos, estimados Alumnos.", "Esto es una pagina estatica"]
+
+                function replaceText() {
+                    if  (document.getElementById("replace").innerHTML == title[0]) {
+                        document.getElementById("replace").innerHTML = title[1];
+                    } else {
+                        document.getElementById("replace").innerHTML = title[0];
+                    }
+                }
+            </script>
+    </head>
+        <!-- Este es mi código -->
+        <br><br>
+        <body bgcolor="#FFFFFF" text="Black">
+            <h1><span id="replace">Bienvenidos, estimados Alumnos.</span></h1>
+            <button onclick=replaceText()>Pinchame</button>
+            <br><br>
+            <img src="images/image1.png" , width=35%, height=35%>
+
+            <p>Este lab está desarrollado por la cátedra de Cloud Computing</p>
+        </body>
+    </div>
+
+</html>
